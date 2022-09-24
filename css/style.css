@@ -1,0 +1,112 @@
+.firstOne{
+    width: 125px;
+    height: 125px;
+    position: relative;
+    background-color: green;
+    -webkit-animation-name: firstOne;
+    -webkit-animation-duration: 4s;
+    animation-name: firstOne;
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes firstOne{
+    from{background-color: blue;}
+    to{background-color: green;}
+}
+
+@keyframes firstOne{
+    from{background-color: blue;}
+    to{background-color: green;}
+}
+
+.secondOne{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    animation: secondOne 5s ease-in infinite reverse;
+}
+
+@-webkit-keyframes secondOne{
+    0%{right: -200px;}
+    100%{right: 200px;}
+}
+
+@keyframes secondOne{
+    0%{right: -200px;}
+    100%{right: 200px;}
+}
+
+.thirdOne{
+    width: 125px;
+    height: 125px;
+    position: relative;
+    background-color: red;
+    -webkit-animation: thirdtOne 4s;
+    animation: thirdOne 4s;
+}
+
+@-webkit-keyframes thirdOne{
+    from{border-radius: 50%;}
+    to{border-radius: 0%;}
+}
+
+@keyframes thirdOne{
+    from{border-radius: 50%;}
+    to{border-radius: 0%;}
+}
+
+.forthOne {
+    width: 50px;
+    height: 50px;
+    margin-left: 50%;
+    background: red;
+    border-radius: 50%;
+    position: relative;
+    animation: movement 5s infinite;
+  }
+
+
+
+@-webkit-keyframes movement {
+    0%   {top: 0px; left: 0px; background: red;}
+    25%  {top: 0px; left: 100px; background: blue;}
+    50%  {top: 100px; left: 100px; background: yellow;}
+    75%  {top: 100px; left: 0px; background: green;}
+    100% {top: 0px; left: 0px; background: red;}
+}
+
+ @keyframes movement {
+    0%   {top: 0px; left: 0px; background: red;}
+    25%  {top: 0px; left: 100px; background: blue;}
+    50%  {top: 100px; left: 100px; background: yellow;}
+    75%  {top: 100px; left: 0px; background: green;}
+    100% {top: 0px; left: 0px; background: red;}
+}
+
+.forthOneS {
+    width: 50px;
+    height: 50px;
+    margin-left: 50%;
+    background: red;
+    border-radius: 50%;
+    position: relative;
+    animation: movementS 5s infinite;
+  }
+
+@-webkit-keyframes movementS {
+    0%   {top: 0px; left: 0px; background: red;}
+    25%  {top: 0px; right: 100px; background: blue;}
+    50%  {bottom: 100px; right: 100px; background: yellow;}
+    75%  {bottom: 100px; right: 0px; background: green;}
+    100% {bottom: 0px; right: 0px; background: red;}
+}
+
+ @keyframes movementS {
+    0%   {top: 0px; left: 0px; background: red;}
+    25%  {top: 0px; left: -100px; background: blue;}
+    50%  {top: -100px; right: 100px; background: yellow;}
+    75%  {bottom: 100px; right: 0px; background: green;}
+    100% {bottom: 0px; right: 0px; background: red;}
+}
